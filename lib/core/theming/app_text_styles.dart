@@ -62,7 +62,6 @@ class AppTextStyles {
     fontSize: 26.sp,
   );
 
-
   static TextStyle semiBold11 = TextStyle(
     fontWeight: FontWeight.w600,
     fontSize: 11.sp,
