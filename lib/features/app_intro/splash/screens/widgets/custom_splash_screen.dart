@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shary/core/helpers/spacing.dart';
+import 'package:shary/core/theming/app_colors.dart';
 import 'package:shary/core/theming/app_text_styles.dart';
 
 class CustomSplashScreen extends StatelessWidget {
@@ -20,14 +21,14 @@ class CustomSplashScreen extends StatelessWidget {
             scale: _pulseController,
             child: Image.asset(
               "assets/images/book.png",
-              color: Colors.white,
+              color: AppColors.white,
             ),
           ),
           verticalSpace(10),
           Text(
             "شـــاري",
             style: AppTextStyles.bold28.copyWith(
-              color: Colors.white,
+              color: AppColors.white,
               fontSize: 52,
             ),
           ),
