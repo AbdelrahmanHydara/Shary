@@ -36,6 +36,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   # For Adapting Screen And Font Size.
   flutter_screenutil: ^5.9.3
+  # The Font Awesome Icon pack available as Flutter Icons.
+  font_awesome_flutter: ^10.10.0
+  # Dots indicator to show progression of a PageView.
+  dots_indicator: ^4.0.1
 
 dev_dependencies:
   flutter_test:
