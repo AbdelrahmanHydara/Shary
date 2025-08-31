@@ -1,0 +1,68 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:shary/core/helpers/spacing.dart';
+import 'package:shary/core/theming/app_colors.dart';
+import 'package:shary/features/auth/login/screens/login_screen.dart';
+import 'package:shary/features/auth/register/screens/register_screen.dart';
+import 'widgets/heading_start_auth.dart';
+import 'widgets/switch_auth_button.dart';
+
+class StartAuthScreen extends StatefulWidget {
+  const StartAuthScreen({super.key});
+
+  @override
+  State<StartAuthScreen> createState() => _StartAuthScreen();
+}
+
+class _StartAuthScreen extends State<StartAuthScreen> {
+
+  bool isLogin = true; // false = Register, true = Login
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: 20.w,
+            vertical: 50.h,
+          ),
+          child: Center(
+            child: Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                color: AppColors.white,
+                borderRadius: BorderRadius.circular(16.r),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black26,
+                    blurRadius: 20,
+                    offset: const Offset(2,4),
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  const HeadingStartAuth(),
+                  SwitchAuthButton(
+                    isLogin: isLogin,
+                    onToggle: (value) {
+                      setState(() {
+                        isLogin = value;
+                      });
+                    },
+                  ),
+                  verticalSpace(28),
+                  Expanded(
+                    child: isLogin ? LoginScreen() : RegisterScreen(),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
