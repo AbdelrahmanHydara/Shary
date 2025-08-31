@@ -21,7 +21,7 @@ class Shary extends StatelessWidget {
       minTextAdapt: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.splashScreen,
+        initialRoute: Routes.startAuthScreen,
         onGenerateRoute: MyRouter.generateRoute,
         theme: ThemeData(
           fontFamily: 'Cairo',

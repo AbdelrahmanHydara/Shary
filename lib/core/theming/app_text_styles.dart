@@ -7,6 +7,10 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     fontSize: 13.sp,
   );
+  static TextStyle bold14 = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 14.sp,
+  );
   static TextStyle bold16 = TextStyle(
     fontWeight: FontWeight.bold,
     fontSize: 16.sp,
@@ -27,10 +31,14 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
     fontSize: 28.sp,
   );
+  static TextStyle bold32 = TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 32.sp,
+  );
 
-  static TextStyle medium15 = TextStyle(
+  static TextStyle medium16 = TextStyle(
     fontWeight: FontWeight.w500,
-    fontSize: 15.sp,
+    fontSize: 16.sp,
   );
   static TextStyle medium18 = TextStyle(
     fontWeight: FontWeight.w500,
@@ -44,6 +52,10 @@ class AppTextStyles {
   static TextStyle regular11 = TextStyle(
     fontWeight: FontWeight.normal,
     fontSize: 11.sp,
+  );
+  static TextStyle regular14 = TextStyle(
+    fontWeight: FontWeight.normal,
+    fontSize: 14.sp,
   );
   static TextStyle regular16 = TextStyle(
     fontWeight: FontWeight.normal,

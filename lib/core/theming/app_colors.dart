@@ -6,6 +6,8 @@ class AppColors {
   static const Color blue = Colors.blue;
   static const Color purple = Colors.purple;
   static const Color white = Colors.white;
+  static const Color grey = Colors.grey;
+  static const Color black = Colors.black;
 
   // ✅ درجات الأخضر
   static Color greenLight = Colors.green.shade100; // #C8E6C9
