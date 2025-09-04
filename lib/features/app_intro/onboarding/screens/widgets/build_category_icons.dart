@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shary/core/helpers/spacing.dart';
 
 class BuildCategoryIcon extends StatelessWidget {
-  const BuildCategoryIcon({super.key, required this.icon, required this.label, required this.color, this.subLabel});
+  const BuildCategoryIcon({super.key, required this.icon, required this.label, required this.color,});
 
-  final IconData icon; final String label;  final Color color;
-  final String? subLabel;
+  final IconData icon;
+  final String label;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         Container(
-          width: 60,
-          height: 60,
+          width: 60.w,
+          height: 60.h,
           decoration: BoxDecoration(
             color: color.withOpacity(0.1),
             shape: BoxShape.circle,
           ),
-          child: Icon(icon, color: color, size: 28),
+          child: Icon(
+              icon,
+            color: color,
+            size: 28,
+          ),
         ),
         verticalSpace(6),
         Text(
@@ -26,14 +32,6 @@ class BuildCategoryIcon extends StatelessWidget {
           style: TextStyle(
             fontSize: 14,
             color: Colors.grey[700],
-          ),
-        ),
-        verticalSpace(6),
-        Text(
-          subLabel??"",
-          style: TextStyle(
-            fontSize: 11,
-            color: Colors.grey[600],
           ),
         ),
       ],
