@@ -19,13 +19,9 @@ class PageViewItem extends StatelessWidget {
     required this.labelThree,
     required this.iconMain,
     required this.colorCircle,
-    this.subLabelOne,
-    this.subLabelTwo,
-    this.subLabelThree,
     this.colorIcon,
   });
 
-  final String? subLabelOne, subLabelTwo, subLabelThree;
   final String title, subtitle, labelOne, labelTwo, labelThree;
   final IconData iconOne, iconTwo, iconThree, iconMain;
   final Color? colorCircle, colorIcon;
@@ -69,13 +65,14 @@ class PageViewItem extends StatelessWidget {
                   FaIcon(
                       iconThree,
                       size: 20,
-                      color: AppColors.purple),
+                      color: AppColors.purple,
+                  ),
                 ],
               ),
             ],
           ),
         ),
-        verticalSpace(32),
+        verticalSpace(34),
         Text(
             title,
             style: AppTextStyles.bold25,
@@ -85,7 +82,7 @@ class PageViewItem extends StatelessWidget {
           subtitle,
           textAlign: TextAlign.center,
           style: AppTextStyles.regular18.copyWith(
-            color: Colors.grey[700],
+            color: Colors.grey[800],
             height: 1.5,
           ),
         ),
@@ -97,21 +94,18 @@ class PageViewItem extends StatelessWidget {
               icon: iconOne,
               label: labelOne,
               color: AppColors.blueMain,
-              subLabel: subLabelOne,
             ),
-            horizontalSpace(24),
+            horizontalSpace(28),
             BuildCategoryIcon(
               icon: iconTwo,
               label: labelTwo,
               color: AppColors.primary,
-              subLabel: subLabelTwo,
             ),
-            horizontalSpace(24),
+            horizontalSpace(28),
             BuildCategoryIcon(
               icon: iconThree,
               label: labelThree,
               color: AppColors.purple,
-              subLabel: subLabelThree,
             ),
           ],
         ),
