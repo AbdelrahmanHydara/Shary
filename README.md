@@ -1,4 +1,4 @@
-# shary
+# Shary App
 
 A new Flutter project.
 
