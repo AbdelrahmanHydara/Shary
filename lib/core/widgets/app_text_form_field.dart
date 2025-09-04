@@ -39,7 +39,7 @@ class AppTextFormField extends StatelessWidget {
         controller: controller,
         keyboardType: keyboardType,
         obscureText: isObscureText ?? false,
-        cursorColor: AppColors.blue,
+        cursorColor: AppColors.blueMain,
         style: AppTextStyles.regular14.copyWith(
         color: AppColors.black,
       ),
@@ -67,7 +67,7 @@ class AppTextFormField extends StatelessWidget {
         focusedBorder: focusedBorder ?? OutlineInputBorder(
             borderRadius: BorderRadius.circular(16.r),
             borderSide: BorderSide(
-              color: AppColors.blue,
+              color: AppColors.blueMain,
             )
         ),
         enabledBorder: enabledBorder ?? OutlineInputBorder(
