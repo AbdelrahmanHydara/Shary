@@ -53,7 +53,7 @@ class PageViewItem extends StatelessWidget {
                   FaIcon(
                       iconOne,
                       size: 20,
-                      color: AppColors.blue,
+                      color: AppColors.blueMain,
                   ),
                   horizontalSpace(12),
                   FaIcon(
@@ -92,7 +92,7 @@ class PageViewItem extends StatelessWidget {
             BuildCategoryIcon(
               icon: iconOne,
               label: labelOne,
-              color: AppColors.blue,
+              color: AppColors.blueMain,
             ),
             horizontalSpace(20),
             BuildCategoryIcon(

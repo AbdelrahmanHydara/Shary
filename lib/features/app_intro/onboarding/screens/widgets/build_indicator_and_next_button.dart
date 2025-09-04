@@ -19,7 +19,7 @@ class BuildIndicatorAndNextButton extends StatelessWidget {
         _buildDotsIndicator(),
         ElevatedButton.icon(
           style: ElevatedButton.styleFrom(
-            backgroundColor: currentPage == 0 ? AppColors.blue: AppColors.primary,
+            backgroundColor: currentPage == 0 ? AppColors.blueMain: AppColors.primary,
             padding: EdgeInsets.symmetric(
                 horizontal: 20.w,
                 vertical: 12.h,
@@ -57,12 +57,12 @@ class BuildIndicatorAndNextButton extends StatelessWidget {
       dotsCount: 2,
       decorator: DotsDecorator(
         activeColor: currentPage == 0 ?
-        AppColors.blue : AppColors.primary,
+        AppColors.blueMain : AppColors.primary,
         color: currentPage == 1
             ? currentPage == 0 ?
-        AppColors.blue : AppColors.primary
+        AppColors.blueMain : AppColors.primary
             : currentPage == 0 ?
-        AppColors.blue.withOpacity(0.4): AppColors.primary.withOpacity(.4),
+        AppColors.blueMain.withOpacity(0.4): AppColors.primary.withOpacity(.4),
       ),
     );
   }

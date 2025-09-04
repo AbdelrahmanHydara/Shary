@@ -25,7 +25,7 @@ class OnBoardingPageView extends StatelessWidget {
           labelTwo: "أدوات",
           labelThree: "ملخصات",
           colorCircle: Colors.blue[100],
-          colorIcon: AppColors.blue,
+          colorIcon: AppColors.blueMain,
         ),
         PageViewItem(
           title: "شارك مذكراتك وساعد زمايلك",
