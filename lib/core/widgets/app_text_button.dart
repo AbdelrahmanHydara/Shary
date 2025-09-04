@@ -50,7 +50,7 @@ class AppTextButton extends StatelessWidget
          ),
         ),
         backgroundColor: WidgetStateProperty.all(
-          backgroundColor ?? AppColors.blue,
+          backgroundColor ?? AppColors.blueMain,
         ),
         foregroundColor: WidgetStateProperty.all(
           foregroundColor ?? AppColors.white,
