@@ -30,7 +30,7 @@ class BuildIndicatorAndNextButton extends StatelessWidget {
           ),
           onPressed: () {
             currentPage == 1
-                ? Navigator.pushReplacementNamed(context, Routes.loginScreen)
+                ? Navigator.pushReplacementNamed(context, Routes.startAuthScreen)
             :
             pageController.nextPage(
               duration: const Duration(milliseconds: 500),

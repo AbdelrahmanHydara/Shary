@@ -19,12 +19,12 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     super.initState();
     _pulseController = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 3),
-      lowerBound: 0.7,
+      duration: const Duration(seconds: 1),
+      lowerBound: 0.9,
       upperBound: 1.05,
     )
       ..repeat(reverse: true);
-    Timer(const Duration(seconds: 3), () {
+    Timer(const Duration(seconds: 4), () {
       Navigator.pushReplacementNamed(context, Routes.onBoardingScreen);
     });
   }

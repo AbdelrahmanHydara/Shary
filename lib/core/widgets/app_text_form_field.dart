@@ -17,6 +17,8 @@ class AppTextFormField extends StatelessWidget {
     this.enabledBorder,
     this.hintStyle,
     this.labelStyle,
+    required this.validator,
+    this.controller,
   });
 
   final String hintText, labelText;
@@ -25,17 +27,23 @@ class AppTextFormField extends StatelessWidget {
   final bool? isObscureText;
   final InputBorder? focusedBorder, enabledBorder;
   final TextStyle? hintStyle, labelStyle;
+  final Function(String?) validator;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      keyboardType: keyboardType,
-      obscureText: isObscureText ?? false,
+        validator: (value) {
+         return validator(value);
+        },
+        controller: controller,
+        keyboardType: keyboardType,
+        obscureText: isObscureText ?? false,
         cursorColor: AppColors.blue,
         style: AppTextStyles.regular14.copyWith(
         color: AppColors.black,
       ),
-      decoration: InputDecoration(
+        decoration: InputDecoration(
         isDense: true,
         hintText: hintText,
         hintStyle: hintStyle ?? AppTextStyles.regular14.copyWith(

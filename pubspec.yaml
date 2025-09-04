@@ -40,6 +40,8 @@ dependencies:
   font_awesome_flutter: ^10.10.0
   # Dots indicator to show progression of a PageView.
   dots_indicator: ^4.0.1
+  # Firebase.
+  firebase_core: ^2.11.0
 
 dev_dependencies:
   flutter_launcher_icons: "^0.14.4"

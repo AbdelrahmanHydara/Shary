@@ -4,6 +4,7 @@ import 'package:shary/features/app_intro/splash/screens/splash_screen.dart';
 import 'package:shary/features/auth/login/screens/login_screen.dart';
 import 'package:shary/features/auth/register/screens/register_screen.dart';
 import 'package:shary/features/auth/start_auth/screens/start_auth_screen.dart';
+import 'package:shary/features/home/screens/home_screen.dart';
 import 'routes.dart';
 
 class MyRouter {
@@ -30,6 +31,10 @@ class MyRouter {
       case Routes.registerScreen:
         return MaterialPageRoute(
             builder: (_) => const RegisterScreen()
+        );
+      case Routes.homeScreen:
+        return MaterialPageRoute(
+            builder: (_) => const HomeScreen()
         );
     }
     return null;

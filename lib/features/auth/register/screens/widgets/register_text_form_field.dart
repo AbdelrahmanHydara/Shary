@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shary/core/helpers/app_validators.dart';
 import 'package:shary/core/helpers/spacing.dart';
 import 'package:shary/core/widgets/app_text_form_field.dart';
 
@@ -15,6 +16,7 @@ class RegisterTextFormField extends StatelessWidget {
           labelText: "الاسم الكامل",
           prefixIcon: Icons.person_outline,
           keyboardType: TextInputType.name,
+          validator: (value) => AppValidators.name(value),
         ),
         verticalSpace(15),
         // Email
@@ -23,6 +25,7 @@ class RegisterTextFormField extends StatelessWidget {
           labelText: "البريد الجامعي",
           prefixIcon: Icons.email_outlined,
           keyboardType: TextInputType.emailAddress,
+          validator: (value) => AppValidators.universityEmail(value),
         ),
         verticalSpace(15),
         // Password
@@ -33,6 +36,7 @@ class RegisterTextFormField extends StatelessWidget {
           prefixIcon: Icons.lock_outline,
           suffixIcon: Icons.visibility_off_outlined,
           keyboardType: TextInputType.visiblePassword,
+          validator: (value) => AppValidators.password(value),
         ),
         verticalSpace(15),
         // Confirm Password
@@ -43,6 +47,7 @@ class RegisterTextFormField extends StatelessWidget {
           prefixIcon: Icons.lock_outline,
           suffixIcon: Icons.visibility_off_outlined,
           keyboardType: TextInputType.visiblePassword,
+          validator: (value) => AppValidators.password(value),
         ),
         verticalSpace(15),
         // College
@@ -51,6 +56,7 @@ class RegisterTextFormField extends StatelessWidget {
           labelText: "الكلية",
           prefixIcon: Icons.school_outlined,
           keyboardType: TextInputType.text,
+          validator: (value) => AppValidators.college(value),
         ),
         verticalSpace(15),
         // Academic Year
@@ -59,6 +65,7 @@ class RegisterTextFormField extends StatelessWidget {
           labelText: "السنة الدراسية",
           prefixIcon: Icons.date_range_outlined,
           keyboardType: TextInputType.text,
+          validator: (value) => AppValidators.studyYear(value),
         ),
       ],
     );
