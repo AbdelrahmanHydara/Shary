@@ -9,10 +9,11 @@ class RegisterScreenBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      physics: const BouncingScrollPhysics(),
       children: [
-        RegisterTextFormField(),
+        const RegisterTextFormField(),
         verticalSpace(28),
-        RegisterButton(),
+        const RegisterButton(),
       ],
     );
   }

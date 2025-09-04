@@ -10,10 +10,11 @@ class LoginScreenBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
+        physics: const BouncingScrollPhysics(),
         children: [
-          LoginTextFormField(),
+          const LoginTextFormField(),
           verticalSpace(28),
-          LoginButton(),
+          const LoginButton(),
         ],
       ),
     );
